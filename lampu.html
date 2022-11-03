@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Lampu Nyala Mati </title>
+    <style>
+        .button-custom {
+    display: inline-block;
+    background: #4285F4;
+    color: #fff;
+    width: 240px;
+    height: 50px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<center>
+<img id="lampu" src="bulboff.jpg" width="100" height="180">
+<p><button class="button-custom" onclick="LampuNyala()"> Turn On The Light </button></p> 
+<p><button class="button-custom" onclick="LampuMati()"> Turn Off The Light</button> </p>
+</center>
+<script>
+    function LampuNyala () {
+        document.getElementById ('lampu').src ="bulbon.jpg";
+    }
+    function LampuMati () {
+        document.getElementById ('lampu').src ="bulboff.jpg";
+    }
+</script>   
+
+    
+</body>
+</html>
